@@ -15,6 +15,7 @@ export async function getAllBlogPosts() {
 // Adds a post on the server
 export async function addBlogPost(newPost) {
     const response = await api.post("/posts", newPost)
+    console.log(response)
     return response.data
 }
 

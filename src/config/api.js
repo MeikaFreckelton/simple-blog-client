@@ -2,7 +2,7 @@ import axios from 'axios'
 
 // Create an axios instance
 export default axios.create({
-  baseURL: 'http://localhost:3009',
-  timeout: 5000,
+  baseURL: 'https://deployed-express-server.herokuapp.com/',
+  timeout: 10000,
   withCredentials: true
 })

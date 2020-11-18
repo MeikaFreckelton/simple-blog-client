@@ -21,6 +21,7 @@ const NewBlogPost = ({history}) => {
             category: formState.category || "general",
             content: formState.content
         }
+        console.log(newPost)
         addBlogPost(newPost).then((newPost) => {
             dispatch({
                 type: "setBlogPosts",
